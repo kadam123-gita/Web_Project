@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Background color for the page */
+  background-image: url('footer-bg.jpg');
+  background-size: cover;
+  background-position: left center;
+}
+
+
+.image-wrapper {
+  height: 500px;
+  width: auto;
+  border-radius: 6px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 1.6;
+  margin-left: 20px;
+}
+
+.image-wrapper img {
+  max-height: 100%; /* Set a maximum height */
+  max-width: 100%; /* Set a maximum width */
+}
+
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine::before {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: -75%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+  z-index: 2;
+}
+
+.shine:hover::before,
+.shine:focus::before {
+  animation: shine 0.85s;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+
+.image-wrapper1 {
+  height: auto;
+  border-radius: 6px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.image-wrapper1 img {
+  height: auto;
+  max-width: 100%;
+}
+
+.shine1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine1::before {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: -75%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+  z-index: 2;
+}
+
+.shine1:hover::before,
+.shine1:focus::before {
+  animation: shine 0.85s;
+}
+
+@keyframes shine1 {
+  100% {
+    left: 125%;
+  }
+}

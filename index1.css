@@ -1,0 +1,5 @@
+.btn btn-primary slider-reveal{
+  background:url(menucard.webp) no-repeat;
+  cursor:-webkit-grab;
+  border: none;
+}
